@@ -1,0 +1,124 @@
+C:\Users\rasing\Desktop\wpfsvl-16372\WPFSoundVisualizationLib\Main\Source\Sample_BASS\bin\Debug\license.txt
+C:\Users\rasing\Desktop\wpfsvl-16372\WPFSoundVisualizationLib\Main\Source\Sample_BASS\bin\Debug\bass.dll
+C:\Users\rasing\Desktop\wpfsvl-16372\WPFSoundVisualizationLib\Main\Source\Sample_BASS\bin\Debug\Bass.Net.dll
+C:\Users\rasing\Desktop\wpfsvl-16372\WPFSoundVisualizationLib\Main\Source\Sample_BASS\bin\Debug\bass_aac.dll
+C:\Users\rasing\Desktop\wpfsvl-16372\WPFSoundVisualizationLib\Main\Source\Sample_BASS\bin\Debug\taglib-sharp.dll
+C:\Users\rasing\Desktop\wpfsvl-16372\WPFSoundVisualizationLib\Main\Source\Sample_BASS\bin\Debug\Sample_BASS.exe
+C:\Users\rasing\Desktop\wpfsvl-16372\WPFSoundVisualizationLib\Main\Source\Sample_BASS\bin\Debug\Sample_BASS.pdb
+C:\Users\rasing\Desktop\wpfsvl-16372\WPFSoundVisualizationLib\Main\Source\Sample_BASS\bin\Debug\WPFSoundVisualizationLib.dll
+C:\Users\rasing\Desktop\wpfsvl-16372\WPFSoundVisualizationLib\Main\Source\Sample_BASS\bin\Debug\WPFSoundVisualizationLib.pdb
+C:\Users\rasing\Desktop\wpfsvl-16372\WPFSoundVisualizationLib\Main\Source\Sample_BASS\bin\Debug\WPFSoundVisualizationLib.xml
+C:\Users\rasing\Desktop\wpfsvl-16372\WPFSoundVisualizationLib\Main\Source\Sample_BASS\obj\x86\Debug\Sample_BASS.csprojResolveAssemblyReference.cache
+C:\Users\rasing\Desktop\wpfsvl-16372\WPFSoundVisualizationLib\Main\Source\Sample_BASS\obj\x86\Debug\ExpressionDark.baml
+C:\Users\rasing\Desktop\wpfsvl-16372\WPFSoundVisualizationLib\Main\Source\Sample_BASS\obj\x86\Debug\ExpressionLight.baml
+C:\Users\rasing\Desktop\wpfsvl-16372\WPFSoundVisualizationLib\Main\Source\Sample_BASS\obj\x86\Debug\MainWindow.baml
+C:\Users\rasing\Desktop\wpfsvl-16372\WPFSoundVisualizationLib\Main\Source\Sample_BASS\obj\x86\Debug\MainWindow.g.cs
+C:\Users\rasing\Desktop\wpfsvl-16372\WPFSoundVisualizationLib\Main\Source\Sample_BASS\obj\x86\Debug\App.g.cs
+C:\Users\rasing\Desktop\wpfsvl-16372\WPFSoundVisualizationLib\Main\Source\Sample_BASS\obj\x86\Debug\Sample_BASS_MarkupCompile.cache
+C:\Users\rasing\Desktop\wpfsvl-16372\WPFSoundVisualizationLib\Main\Source\Sample_BASS\obj\x86\Debug\Sample_BASS.g.resources
+C:\Users\rasing\Desktop\wpfsvl-16372\WPFSoundVisualizationLib\Main\Source\Sample_BASS\obj\x86\Debug\Sample_BASS.Properties.Resources.resources
+C:\Users\rasing\Desktop\wpfsvl-16372\WPFSoundVisualizationLib\Main\Source\Sample_BASS\obj\x86\Debug\Sample_BASS.csproj.GenerateResource.Cache
+C:\Users\rasing\Desktop\wpfsvl-16372\WPFSoundVisualizationLib\Main\Source\Sample_BASS\obj\x86\Debug\Sample_BASS.exe
+C:\Users\rasing\Desktop\wpfsvl-16372\WPFSoundVisualizationLib\Main\Source\Sample_BASS\obj\x86\Debug\Sample_BASS.pdb
+F:\Project1\Sample_BASS\obj\x86\Debug\Sample_BASS.exe
+F:\Project1\Sample_BASS\obj\x86\Debug\Sample_BASS.pdb
+F:\Project1\Sample_BASS\bin\Debug\license.txt
+F:\Project1\Sample_BASS\bin\Debug\bass.dll
+F:\Project1\Sample_BASS\bin\Debug\Bass.Net.dll
+F:\Project1\Sample_BASS\bin\Debug\bass_aac.dll
+F:\Project1\Sample_BASS\bin\Debug\taglib-sharp.dll
+F:\Project1\Sample_BASS\bin\Debug\Sample_BASS.exe
+F:\Project1\Sample_BASS\bin\Debug\Sample_BASS.pdb
+F:\Project1\Sample_BASS\bin\Debug\WPFSoundVisualizationLib.dll
+F:\Project1\Sample_BASS\bin\Debug\WPFSoundVisualizationLib.pdb
+F:\Project1\Sample_BASS\bin\Debug\WPFSoundVisualizationLib.xml
+F:\Project1\Sample_BASS\obj\x86\Debug\Sample_BASS.csprojResolveAssemblyReference.cache
+F:\Project1\Sample_BASS\obj\x86\Debug\ExpressionDark.baml
+F:\Project1\Sample_BASS\obj\x86\Debug\ExpressionLight.baml
+F:\Project1\Sample_BASS\obj\x86\Debug\MainWindow.baml
+F:\Project1\Sample_BASS\obj\x86\Debug\MainWindow.g.cs
+F:\Project1\Sample_BASS\obj\x86\Debug\App.g.cs
+F:\Project1\Sample_BASS\obj\x86\Debug\Sample_BASS_MarkupCompile.cache
+F:\Project1\Sample_BASS\obj\x86\Debug\Sample_BASS.g.resources
+F:\Project1\Sample_BASS\obj\x86\Debug\Sample_BASS.Properties.Resources.resources
+F:\Project1\Sample_BASS\obj\x86\Debug\Sample_BASS.csproj.GenerateResource.Cache
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\Sample_BASS\obj\x86\Debug\Sample_BASS.exe
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\Sample_BASS\obj\x86\Debug\Sample_BASS.pdb
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\Sample_BASS\bin\Debug\license.txt
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\Sample_BASS\bin\Debug\bass.dll
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\Sample_BASS\bin\Debug\Bass.Net.dll
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\Sample_BASS\bin\Debug\bass_aac.dll
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\Sample_BASS\bin\Debug\taglib-sharp.dll
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\Sample_BASS\bin\Debug\Sample_BASS.exe
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\Sample_BASS\bin\Debug\Sample_BASS.pdb
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\Sample_BASS\bin\Debug\WPFSoundVisualizationLib.dll
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\Sample_BASS\bin\Debug\WPFSoundVisualizationLib.pdb
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\Sample_BASS\bin\Debug\WPFSoundVisualizationLib.xml
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\Sample_BASS\obj\x86\Debug\Sample_BASS.csprojResolveAssemblyReference.cache
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\Sample_BASS\obj\x86\Debug\ExpressionDark.baml
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\Sample_BASS\obj\x86\Debug\ExpressionLight.baml
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\Sample_BASS\obj\x86\Debug\MainWindow.baml
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\Sample_BASS\obj\x86\Debug\MainWindow.g.cs
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\Sample_BASS\obj\x86\Debug\App.g.cs
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\Sample_BASS\obj\x86\Debug\Sample_BASS_MarkupCompile.cache
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\Sample_BASS\obj\x86\Debug\Sample_BASS.g.resources
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\Sample_BASS\obj\x86\Debug\Sample_BASS.Properties.Resources.resources
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\Sample_BASS\obj\x86\Debug\Sample_BASS.csproj.GenerateResource.Cache
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\Sample_BASS\obj\x86\Debug\Sample_BASS_Content.g.cs
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\license.txt
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\bass.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\Bass.Net.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\bass_aac.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\taglib-sharp.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\Sample_BASS.exe
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\Sample_BASS.pdb
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\WPFSoundVisualizationLib.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\WPFSoundVisualizationLib.pdb
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\WPFSoundVisualizationLib.xml
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\obj\x86\Debug\Sample_BASS.csprojResolveAssemblyReference.cache
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\obj\x86\Debug\ExpressionDark.baml
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\obj\x86\Debug\ExpressionLight.baml
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\obj\x86\Debug\MainWindow.baml
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\obj\x86\Debug\MainWindow.g.cs
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\obj\x86\Debug\App.g.cs
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\obj\x86\Debug\Sample_BASS_Content.g.cs
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\obj\x86\Debug\Sample_BASS_MarkupCompile.cache
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\obj\x86\Debug\Sample_BASS.g.resources
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\obj\x86\Debug\Sample_BASS.Properties.Resources.resources
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\obj\x86\Debug\Sample_BASS.csproj.GenerateResource.Cache
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\obj\x86\Debug\Sample_BASS.exe
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\obj\x86\Debug\Sample_BASS.pdb
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\Microsoft.Data.Edm.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\Microsoft.Data.OData.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\System.Spatial.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\Microsoft.Data.Edm.xml
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\Microsoft.Data.OData.xml
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\System.Spatial.xml
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\de\Microsoft.Data.Edm.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\es\Microsoft.Data.Edm.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\it\Microsoft.Data.Edm.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\de\Microsoft.Data.OData.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\es\Microsoft.Data.OData.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\it\Microsoft.Data.OData.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\de\System.Spatial.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\es\System.Spatial.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\fr\System.Spatial.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\it\System.Spatial.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\ja\System.Spatial.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\ko\System.Spatial.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\ru\System.Spatial.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\zh-Hans\System.Spatial.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\Sample_BASS\bin\Debug\zh-Hant\System.Spatial.resources.dll

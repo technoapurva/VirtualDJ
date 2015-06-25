@@ -1,0 +1,85 @@
+c:\users\steve\documents\visual studio 2012\Projects\MetroWindows\MetroWindows\bin\Debug\MetroWindows.exe.config
+c:\users\steve\documents\visual studio 2012\Projects\MetroWindows\MetroWindows\bin\Debug\MetroWindows.exe
+c:\users\steve\documents\visual studio 2012\Projects\MetroWindows\MetroWindows\bin\Debug\MetroWindows.pdb
+c:\users\steve\documents\visual studio 2012\Projects\MetroWindows\MetroWindows\obj\Debug\MetroWindows.csprojResolveAssemblyReference.cache
+c:\users\steve\documents\visual studio 2012\Projects\MetroWindows\MetroWindows\obj\Debug\MainWindow.baml
+c:\users\steve\documents\visual studio 2012\Projects\MetroWindows\MetroWindows\obj\Debug\MainWindow.g.cs
+c:\users\steve\documents\visual studio 2012\Projects\MetroWindows\MetroWindows\obj\Debug\App.g.cs
+c:\users\steve\documents\visual studio 2012\Projects\MetroWindows\MetroWindows\obj\Debug\MetroWindows_MarkupCompile.cache
+c:\users\steve\documents\visual studio 2012\Projects\MetroWindows\MetroWindows\obj\Debug\MetroWindows.g.resources
+c:\users\steve\documents\visual studio 2012\Projects\MetroWindows\MetroWindows\obj\Debug\MetroWindows.Properties.Resources.resources
+c:\users\steve\documents\visual studio 2012\Projects\MetroWindows\MetroWindows\obj\Debug\MetroWindows.csproj.GenerateResource.Cache
+c:\users\steve\documents\visual studio 2012\Projects\MetroWindows\MetroWindows\obj\Debug\MetroWindows.exe
+c:\users\steve\documents\visual studio 2012\Projects\MetroWindows\MetroWindows\obj\Debug\MetroWindows.pdb
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\MetroWindows.exe.config
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\obj\Debug\MetroWindows.exe
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\obj\Debug\MetroWindows.pdb
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\MetroWindows.exe
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\MetroWindows.pdb
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\obj\Debug\MetroWindows.csprojResolveAssemblyReference.cache
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\obj\Debug\MainWindow.baml
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\obj\Debug\MainWindow.g.cs
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\obj\Debug\App.g.cs
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\obj\Debug\MetroWindows_MarkupCompile.cache
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\obj\Debug\MetroWindows.g.resources
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\obj\Debug\MetroWindows.Properties.Resources.resources
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\obj\Debug\MetroWindows.csproj.GenerateResource.Cache
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\obj\Debug\MetroWindows_Content.g.cs
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\license.txt
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\bass.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\Bass.Net.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\bass_aac.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\taglib-sharp.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\Sample_BASS.exe
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\WPFSoundVisualizationLib.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\Sample_BASS.pdb
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\WPFSoundVisualizationLib.pdb
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\WPFSoundVisualizationLib.xml
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\obj\Debug\ExpressionDark.baml
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\obj\Debug\ExpressionLight.baml
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\obj\Debug\VolumeControl.g.cs
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\obj\Debug\MetroWindows_MarkupCompile.lref
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\obj\Debug\VolumeControl.baml
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\obj\Debug\RedDisc.g.cs
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\obj\Debug\RedDisc.baml
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\obj\Debug\BlueDisc.g.cs
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\obj\Debug\BlueDisc.baml
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\obj\Debug\SongList.baml
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\obj\Debug\SongList.g.cs
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\Microsoft.Data.Edm.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\Microsoft.Data.OData.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\System.Spatial.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\Microsoft.Data.Edm.xml
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\Microsoft.Data.OData.xml
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\System.Spatial.xml
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\de\Microsoft.Data.Edm.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\es\Microsoft.Data.Edm.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\it\Microsoft.Data.Edm.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\de\Microsoft.Data.OData.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\es\Microsoft.Data.OData.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\it\Microsoft.Data.OData.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\de\System.Spatial.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\es\System.Spatial.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\fr\System.Spatial.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\it\System.Spatial.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\ja\System.Spatial.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\ko\System.Spatial.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\ru\System.Spatial.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\zh-Hans\System.Spatial.resources.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\MetroWindows\bin\Debug\zh-Hant\System.Spatial.resources.dll

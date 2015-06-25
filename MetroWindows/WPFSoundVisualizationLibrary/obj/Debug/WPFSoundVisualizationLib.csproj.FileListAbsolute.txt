@@ -1,0 +1,56 @@
+C:\Users\rasing\Desktop\wpfsvl-16372\WPFSoundVisualizationLib\Main\Source\WPFSoundVisualizationLibrary\bin\Debug\license.txt
+C:\Users\rasing\Desktop\wpfsvl-16372\WPFSoundVisualizationLib\Main\Source\WPFSoundVisualizationLibrary\bin\Debug\WPFSoundVisualizationLib.XML
+C:\Users\rasing\Desktop\wpfsvl-16372\WPFSoundVisualizationLib\Main\Source\WPFSoundVisualizationLibrary\bin\Debug\WPFSoundVisualizationLib.dll
+C:\Users\rasing\Desktop\wpfsvl-16372\WPFSoundVisualizationLib\Main\Source\WPFSoundVisualizationLibrary\bin\Debug\WPFSoundVisualizationLib.pdb
+C:\Users\rasing\Desktop\wpfsvl-16372\WPFSoundVisualizationLib\Main\Source\WPFSoundVisualizationLibrary\obj\Debug\WPFSoundVisualizationLib.csprojResolveAssemblyReference.cache
+C:\Users\rasing\Desktop\wpfsvl-16372\WPFSoundVisualizationLib\Main\Source\WPFSoundVisualizationLibrary\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\rasing\Desktop\wpfsvl-16372\WPFSoundVisualizationLib\Main\Source\WPFSoundVisualizationLibrary\obj\Debug\WPFSoundVisualizationLib_MarkupCompile.cache
+C:\Users\rasing\Desktop\wpfsvl-16372\WPFSoundVisualizationLib\Main\Source\WPFSoundVisualizationLibrary\obj\Debug\WPFSoundVisualizationLib_MarkupCompile.lref
+C:\Users\rasing\Desktop\wpfsvl-16372\WPFSoundVisualizationLib\Main\Source\WPFSoundVisualizationLibrary\obj\Debug\Themes\Generic.baml
+C:\Users\rasing\Desktop\wpfsvl-16372\WPFSoundVisualizationLib\Main\Source\WPFSoundVisualizationLibrary\obj\Debug\WPFSoundVisualizationLib.g.resources
+C:\Users\rasing\Desktop\wpfsvl-16372\WPFSoundVisualizationLib\Main\Source\WPFSoundVisualizationLibrary\obj\Debug\WPFSoundVisualizationLib.Properties.Resources.resources
+C:\Users\rasing\Desktop\wpfsvl-16372\WPFSoundVisualizationLib\Main\Source\WPFSoundVisualizationLibrary\obj\Debug\WPFSoundVisualizationLib.csproj.GenerateResource.Cache
+C:\Users\rasing\Desktop\wpfsvl-16372\WPFSoundVisualizationLib\Main\Source\WPFSoundVisualizationLibrary\obj\Debug\WPFSoundVisualizationLib.dll
+C:\Users\rasing\Desktop\wpfsvl-16372\WPFSoundVisualizationLib\Main\Source\WPFSoundVisualizationLibrary\obj\Debug\WPFSoundVisualizationLib.pdb
+F:\Project1\WPFSoundVisualizationLibrary\bin\Debug\license.txt
+F:\Project1\WPFSoundVisualizationLibrary\bin\Debug\WPFSoundVisualizationLib.XML
+F:\Project1\WPFSoundVisualizationLibrary\bin\Debug\WPFSoundVisualizationLib.dll
+F:\Project1\WPFSoundVisualizationLibrary\bin\Debug\WPFSoundVisualizationLib.pdb
+F:\Project1\WPFSoundVisualizationLibrary\obj\Debug\WPFSoundVisualizationLib.csprojResolveAssemblyReference.cache
+F:\Project1\WPFSoundVisualizationLibrary\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\Project1\WPFSoundVisualizationLibrary\obj\Debug\WPFSoundVisualizationLib_MarkupCompile.cache
+F:\Project1\WPFSoundVisualizationLibrary\obj\Debug\WPFSoundVisualizationLib_MarkupCompile.lref
+F:\Project1\WPFSoundVisualizationLibrary\obj\Debug\Themes\Generic.baml
+F:\Project1\WPFSoundVisualizationLibrary\obj\Debug\WPFSoundVisualizationLib.g.resources
+F:\Project1\WPFSoundVisualizationLibrary\obj\Debug\WPFSoundVisualizationLib.Properties.Resources.resources
+F:\Project1\WPFSoundVisualizationLibrary\obj\Debug\WPFSoundVisualizationLib.csproj.GenerateResource.Cache
+F:\Project1\WPFSoundVisualizationLibrary\obj\Debug\WPFSoundVisualizationLib.dll
+F:\Project1\WPFSoundVisualizationLibrary\obj\Debug\WPFSoundVisualizationLib.pdb
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\WPFSoundVisualizationLibrary\bin\Debug\license.txt
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\WPFSoundVisualizationLibrary\bin\Debug\WPFSoundVisualizationLib.XML
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\WPFSoundVisualizationLibrary\bin\Debug\WPFSoundVisualizationLib.dll
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\WPFSoundVisualizationLibrary\bin\Debug\WPFSoundVisualizationLib.pdb
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\WPFSoundVisualizationLibrary\obj\Debug\WPFSoundVisualizationLib.csprojResolveAssemblyReference.cache
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\WPFSoundVisualizationLibrary\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\WPFSoundVisualizationLibrary\obj\Debug\WPFSoundVisualizationLib_MarkupCompile.cache
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\WPFSoundVisualizationLibrary\obj\Debug\WPFSoundVisualizationLib_MarkupCompile.lref
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\WPFSoundVisualizationLibrary\obj\Debug\Themes\Generic.baml
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\WPFSoundVisualizationLibrary\obj\Debug\WPFSoundVisualizationLib.g.resources
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\WPFSoundVisualizationLibrary\obj\Debug\WPFSoundVisualizationLib.Properties.Resources.resources
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\WPFSoundVisualizationLibrary\obj\Debug\WPFSoundVisualizationLib.csproj.GenerateResource.Cache
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\WPFSoundVisualizationLibrary\obj\Debug\WPFSoundVisualizationLib.dll
+C:\Users\appatha\Documents\Visual Studio 2012\Projects\Project1\WPFSoundVisualizationLibrary\obj\Debug\WPFSoundVisualizationLib.pdb
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\WPFSoundVisualizationLibrary\bin\Debug\license.txt
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\WPFSoundVisualizationLibrary\bin\Debug\WPFSoundVisualizationLib.XML
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\WPFSoundVisualizationLibrary\bin\Debug\WPFSoundVisualizationLib.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\WPFSoundVisualizationLibrary\bin\Debug\WPFSoundVisualizationLib.pdb
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\WPFSoundVisualizationLibrary\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\WPFSoundVisualizationLibrary\obj\Debug\WPFSoundVisualizationLib_MarkupCompile.cache
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\WPFSoundVisualizationLibrary\obj\Debug\WPFSoundVisualizationLib_MarkupCompile.lref
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\WPFSoundVisualizationLibrary\obj\Debug\Themes\Generic.baml
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\WPFSoundVisualizationLibrary\obj\Debug\WPFSoundVisualizationLib.g.resources
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\WPFSoundVisualizationLibrary\obj\Debug\WPFSoundVisualizationLib.Properties.Resources.resources
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\WPFSoundVisualizationLibrary\obj\Debug\WPFSoundVisualizationLib.csproj.GenerateResource.Cache
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\WPFSoundVisualizationLibrary\obj\Debug\WPFSoundVisualizationLib.dll
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\WPFSoundVisualizationLibrary\obj\Debug\WPFSoundVisualizationLib.pdb
+C:\Users\appatha\Downloads\MetroWindows\MetroWindows\WPFSoundVisualizationLibrary\obj\Debug\WPFSoundVisualizationLib.csprojResolveAssemblyReference.cache

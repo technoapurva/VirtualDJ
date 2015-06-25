@@ -1,0 +1,475 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:svl="clr-namespace:WPFSoundVisualizationLib;assembly=WPFSoundVisualizationLib"
+        xmlns:local="clr-namespace:MetroWindows" x:Class="MetroWindows.MainWindow"
+        Title="Virtual DJ" Height="768" Width="1366" Style="{DynamicResource MetroWindowStyle}" AllowsTransparency="True" WindowStyle="None" BorderThickness="0" ResizeMode="NoResize" WindowState="Maximized">
+    <Window.Resources>
+        
+        <Style x:Key="MetroWindowStyle" TargetType="{x:Type Window}">
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}"/>
+            <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"/>
+            <Setter Property="WindowStyle" Value="None" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Window}">
+                        <Grid x:Name="WindowGrid" Margin="0">
+                            <Border x:Name="MainBorder" BorderThickness="0" Margin="0" >
+                                <Border.Background>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="Black" Offset="0"/>
+                                        <GradientStop Color="#FF130F0F" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </Border.Background>
+                                <DockPanel LastChildFill="True">
+                                    <Border x:Name="PART_TITLEBAR" 
+                                            Margin="0,0,0,0" Height="40" DockPanel.Dock="Top"  
+                                            Background="Transparent" MouseLeftButtonDown="PART_TITLEBAR_MouseLeftButtonDown">
+                                        <DockPanel LastChildFill="False">
+                                            <TextBlock Margin="4,0,0,4" VerticalAlignment="Center" 
+                                                       Foreground="#FFAAAAAA" TextWrapping="NoWrap" 
+                                                       Text="{TemplateBinding Title}" FontSize="16" />
+                                            <Button x:Name="PART_CLOSE" DockPanel.Dock="Right" 
+                                                    VerticalAlignment="Center" Margin="5"
+                                                    Height="20" Width="20" 
+                                                    Style="{DynamicResource MetroWindowButtonStyle}"
+                                                    Click="PART_CLOSE_Click">
+                                                <Path Data="F1M54.0573,47.8776L38.1771,31.9974 54.0547,16.1198C55.7604,14.4141 55.7604,11.6511 54.0573,9.94531 52.3516,8.23962 49.5859,8.23962 47.8802,9.94531L32.0026,25.8229 16.1224,9.94531C14.4167,8.23962 11.6511,8.23962 9.94794,9.94531 8.24219,11.6511 8.24219,14.4141 9.94794,16.1198L25.8255,32 9.94794,47.8776C8.24219,49.5834 8.24219,52.3477 9.94794,54.0534 11.6511,55.7572 14.4167,55.7585 16.1224,54.0534L32.0026,38.1745 47.8802,54.0534C49.5859,55.7585 52.3516,55.7572 54.0573,54.0534 55.7604,52.3477 55.763,49.5834 54.0573,47.8776z" 
+                                                      Stretch="Uniform" Fill="#FFAAAAAA" Width="10" Margin="0,0,0,0" />
+                                            </Button>
+                                            <Button x:Name="PART_MAXIMIZE_RESTORE" 
+                                                    DockPanel.Dock="Right" Margin="5"
+                                                    HorizontalAlignment="Center" VerticalAlignment="Center" 
+                                                    Height="20" Width="20" Style="{DynamicResource MetroWindowButtonStyle}"
+                                                    Click="PART_MAXIMIZE_RESTORE_Click">
+                                                <Path Data="M4.3685131,23.127279L4.3685131,47.283243 47.117023,47.283243 47.117023,23.127279z M0,10.684L53.755001,10.684 53.755001,51.668001 0,51.668001z M8.5679998,0L58.668022,0 64,0 64,5.6864691 64,45.317999 58.668022,45.317999 58.668022,5.6864691 8.5679998,5.6864691z"
+                                                      Stretch="Uniform" Fill="#FFAAAAAA" Width="10" Margin="0,0,0,0" />
+                                            </Button>
+                                            <Button x:Name="PART_MINIMIZE" 
+                                                    HorizontalAlignment="Center" 
+                                                    VerticalAlignment="Center" Margin="5"
+                                                    DockPanel.Dock="Right"
+                                                    Height="20" Width="20" Style="{DynamicResource MetroWindowButtonStyle}"
+                                                    Click="PART_MINIMIZE_Click" VerticalContentAlignment="Bottom">
+                                                <Path Data="M0,20L53.333,20 53.333,8.888 0,8.888z" 
+                                                          Stretch="Uniform" Fill="#FFAAAAAA" Width="10" Margin="0,0,0,5"/>
+                                            </Button>
+                                        </DockPanel>
+                                    </Border>
+
+                                    <AdornerDecorator DockPanel.Dock="Bottom">
+                                        <ContentPresenter ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" ContentStringFormat="{TemplateBinding ContentStringFormat}"/>
+                                    </AdornerDecorator>
+                                </DockPanel>
+                            </Border>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="ResizeMode" Value="CanResizeWithGrip">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Window}">
+                                <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}">
+                                    <Grid>
+                                        <AdornerDecorator>
+                                            <ContentPresenter ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" ContentStringFormat="{TemplateBinding ContentStringFormat}"/>
+                                        </AdornerDecorator>
+                                        <ResizeGrip x:Name="WindowResizeGrip" HorizontalAlignment="Right" IsTabStop="False" Visibility="Collapsed" VerticalAlignment="Bottom"/>
+                                    </Grid>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <MultiTrigger>
+                                        <MultiTrigger.Conditions>
+                                            <Condition Property="ResizeMode" Value="CanResizeWithGrip"/>
+                                            <Condition Property="WindowState" Value="Normal"/>
+                                        </MultiTrigger.Conditions>
+                                        <Setter Property="Visibility" TargetName="WindowResizeGrip" Value="Visible"/>
+                                    </MultiTrigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="MetroWindowButtonStyle" TargetType="{x:Type Button}">
+            <Setter Property="FocusVisualStyle">
+                <Setter.Value>
+                    <Style>
+                        <Setter Property="Control.Template">
+                            <Setter.Value>
+                                <ControlTemplate>
+                                    <Rectangle Margin="2" SnapsToDevicePixels="True" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" StrokeThickness="1" StrokeDashArray="1 2"/>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Background" Value="{x:Null}"/>
+            <Setter Property="BorderBrush" Value="#FF707070"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
+                            <ContentPresenter x:Name="contentPresenter" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" ContentStringFormat="{TemplateBinding ContentStringFormat}" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsDefaulted" Value="True">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" TargetName="border" Value="#FFBEE6FD"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="#FF3C7FB1"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" TargetName="border" Value="#FFC4E5F6"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="#FF2C628B"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Background" TargetName="border" Value="#FFF4F4F4"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="#FFADB2B5"/>
+                                <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="#FF838383"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid Margin="3,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="107*"/>
+            <RowDefinition Height="75*"/>
+        </Grid.RowDefinitions>
+        <Grid Margin="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300*"/>
+                <ColumnDefinition Width="156*"/>
+                <ColumnDefinition Width="300*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Margin="0">
+                <Border BorderBrush="White" BorderThickness="3" Margin="0" AllowDrop="True" DragEnter="Border_DragEnter_1" Drop="Border_Drop_1">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="135*"/>
+                            <RowDefinition Height="287*"/>
+                        </Grid.RowDefinitions>
+                        <Grid Margin="0">
+                            <Border BorderBrush="White" BorderThickness="1" Margin="0">
+                                <Grid>
+                                    <svl:WaveformTimeline x:Name="waveformTimeline"
+                                		Margin="0,83,0,0"
+                                		BorderThickness="1" />
+                                    <svl:SpectrumAnalyzer x:Name="spectrumAnalyzer"
+                                    	Margin="0,0,0,30" BarCount="16" />
+                                </Grid>
+                            </Border>
+                        </Grid>
+                        <Grid  Margin="0" Grid.Row="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="55*"/>
+                                <RowDefinition Height="232*"/>
+                            </Grid.RowDefinitions>
+                            <Grid Margin="0">
+                                <Border BorderBrush="White" BorderThickness="1" Margin="0">
+                                    <Grid>
+                                        <Image x:Name="browseButton1" HorizontalAlignment="Right" Height="40" Margin="0,0,7,5" VerticalAlignment="Bottom" Width="40" Source="Images/browse white.png" RenderTransformOrigin="1.625,0.438" MouseLeftButtonUp="browseButton1_MouseLeftButtonUp" MouseLeftButtonDown="browseButton1_MouseLeftButtonDown" MouseLeave="browseButton1_MouseLeave" MouseEnter="browseButton1_MouseEnter" />
+                                        <TextBlock x:Name="songName1" Margin="10,5,150,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Foreground="Red" FontSize="16" FontWeight="Bold"/>
+                                        <TextBlock x:Name="albumName1" Margin="10,0,150,3" TextWrapping="Wrap" VerticalAlignment="Bottom" Height="25" Foreground="White" FontSize="16"/>
+                                        <TextBlock HorizontalAlignment="Right" Margin="0,14,46,14" TextWrapping="Wrap" Text="BPM" VerticalAlignment="Center" Height="25" Width="38" Foreground="Red" FontSize="16" FontWeight="Bold" RenderTransformOrigin="2,0.94"/>
+                                        <TextBlock x:Name="bpmText1" HorizontalAlignment="Right" Margin="0,0,84,0" TextWrapping="Wrap" VerticalAlignment="Center" Height="29" Width="66" Foreground="White" FontSize="20" FontWeight="Bold" RenderTransformOrigin="2,0.94"/>
+                                    </Grid>
+                                </Border>
+                            </Grid>
+
+                            <Image x:Name="playButton1" HorizontalAlignment="Right" Height="40" Margin="0,0,110,10" Grid.Row="1" VerticalAlignment="Bottom" Width="40" Source="Images/play white.png" RenderTransformOrigin="1.625,0.438" MouseLeftButtonUp="playButton1_MouseLeftButtonUp" MouseLeave="playButton1_MouseLeave" MouseEnter="playButton1_MouseEnter" MouseLeftButtonDown="playButton1_MouseLeftButtonDown"/>
+                            <Image x:Name="stopButton1" HorizontalAlignment="Right" Height="40" Margin="0,0,60,10" Grid.Row="1" VerticalAlignment="Bottom" Width="40" Source="Images/stop white.png" RenderTransformOrigin="1.625,0.438" MouseLeftButtonUp="stopButton1_MouseLeftButtonUp" MouseLeave="stopButton1_MouseLeave" MouseEnter="stopButton1_MouseEnter" MouseLeftButtonDown="stopButton1_MouseLeftButtonDown"/>
+                            <Image x:Name="pauseButton1" HorizontalAlignment="Right" Height="40" Margin="0,0,160,10" Grid.Row="1" VerticalAlignment="Bottom" Width="40" Source="Images/pause white.png" RenderTransformOrigin="1.625,0.438" MouseLeftButtonUp="pauseButton1_MouseLeftButtonUp" MouseEnter="pauseButton1_MouseEnter" MouseLeave="pauseButton1_MouseLeave" MouseLeftButtonDown="pauseButton1_MouseLeftButtonDown"/>
+                            <Slider x:Name="pitchSlider1" HorizontalAlignment="Right" Margin="0,0,10,72" VerticalAlignment="Bottom" Width="22" Height="125" RenderTransformOrigin="-0.735,1.071" LargeChange="0.1" Maximum="1" SmallChange="0.01" TickFrequency="0.1"  Grid.Row="1" Orientation="Vertical" ValueChanged="pitchSlider1_ValueChanged" Minimum="-1"/>
+                            <Label Content="Pitch" HorizontalAlignment="Right" Margin="0,12,3,0" Grid.Row="1" VerticalAlignment="Top" Height="23" Width="40" FontSize="13" FontFamily="Trebuchet MS"/>
+                            <Image x:Name="cueButton1" HorizontalAlignment="Right" Height="40" Margin="0,0,210,10" Grid.Row="1" VerticalAlignment="Bottom" Width="40" Source="Images/cue white.png" RenderTransformOrigin="1.625,0.438" MouseLeave="cueButton1_MouseLeave" MouseLeftButtonUp="cueButton1_MouseLeftButtonUp" MouseLeftButtonDown="cueButton1_MouseLeftButtonDown" MouseEnter="cueButton1_MouseEnter" />
+                            <Image x:Name="syncButton1" HorizontalAlignment="Right" Height="40" Margin="0,0,10,10" Grid.Row="1" VerticalAlignment="Bottom" Width="40" Source="Images/sync white.png" RenderTransformOrigin="1.625,0.438" MouseEnter="syncButton1_MouseEnter" MouseLeave="syncButton1_MouseLeave" MouseLeftButtonUp="syncButton1_MouseLeftButtonUp" MouseLeftButtonDown="syncButton1_MouseLeftButtonDown"/>
+                            <Grid HorizontalAlignment="Left" Height="63" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="197">
+                                <svl:DigitalClock Grid.Row="1"
+        		Grid.ColumnSpan="2"
+        		x:Name="clockDisplay"
+        		HorizontalAlignment="Left"
+        		Margin="5" ShowSubSeconds="True" ShowHours="False" />
+                            </Grid>
+                            <Grid x:Name="redDiscGrid" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,12,52,0" Width="160" Height="160">
+                            <Image x:Name="redDisc" Source="Images/disc red.png" RenderTransformOrigin="0.5,0.5" Grid.Row="1"   Width="160" Height="160" MouseLeftButtonDown="Image_MouseLeftButtonDown_1" MouseLeftButtonUp="Image_MouseLeftButtonUp_2" MouseMove="Image_MouseMove_1" Cursor="Hand">
+                                    <Image.LayoutTransform>
+                                        <RotateTransform CenterX="0.5" CenterY="0.5" />
+                                    </Image.LayoutTransform>
+                                </Image>
+                            </Grid>
+                            <StackPanel Orientation="Vertical"
+                            	VerticalAlignment="Bottom"
+            						Margin="10,0,424,90" Grid.Row="1" Height="69">
+                                <svl:TimeEditor Margin="5"
+                            		x:Name="repeatStartTimeEdit"
+            							 />
+                                <svl:TimeEditor Margin="5"
+                            		x:Name="repeatStopTimeEdit"
+            							 />
+                            </StackPanel>
+                            <Button Content="Button" HorizontalAlignment="Left" Margin="26,202,0,0" Grid.Row="1" VerticalAlignment="Top" Width="76" Click="Button_Click_1" Visibility="Hidden"/>
+                            <Button Content="Button" HorizontalAlignment="Left" Margin="132,202,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="Button_Click_2" Visibility="Hidden"/>
+                            <Grid HorizontalAlignment="Left" Height="72" Margin="10,0,0,10" Grid.Row="1" VerticalAlignment="Bottom" Width="120">
+                                <Button x:Name="cue1" Content="1" HorizontalAlignment="Left" Margin="10,0,0,20" VerticalAlignment="Bottom" Width="30" Height="30" RenderTransformOrigin="-0.667,1.25" Click="Button_Click_3" ClickMode="Press" MouseEnter="cue1_MouseEnter" MouseLeave="cue1_MouseLeave" MouseMove="cue1_MouseMove"/>
+                                <Button x:Name="cue2" Content="2" HorizontalAlignment="Center" Margin="45,0,45,20" VerticalAlignment="Bottom" Width="30" Height="30" RenderTransformOrigin="-0.667,1.25" Click="cue2_Click" ClickMode="Press"/>
+                                <Button x:Name="cue3" Content="3" VerticalAlignment="Bottom" Height="30" RenderTransformOrigin="-0.667,1.25" Margin="80,0,10,20" Click="cue3_Click" ClickMode="Press"/>
+                                <TextBlock Margin="0" TextWrapping="Wrap" Text="Hot Cues" VerticalAlignment="Top" Height="16" TextAlignment="Center" Foreground="White"/>
+                                <Button Content="Reset" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Bottom" Width="100" Click="Button_Click_4"/>
+                            </Grid>
+                            <Grid HorizontalAlignment="Left" Height="107" Margin="135,0,0,10" Grid.Row="1" VerticalAlignment="Bottom" Width="120">
+                                <Button x:Name="rLoop1" Content="1" HorizontalAlignment="Left" Margin="10,0,0,52" VerticalAlignment="Bottom" Width="30" Height="30" RenderTransformOrigin="-0.667,1.25" Click="rLoop1_Click" ClickMode="Press" MouseEnter="cue1_MouseEnter" MouseLeave="cue1_MouseLeave" MouseMove="cue1_MouseMove"/>
+                                <Button x:Name="rLoop16" Content="16" HorizontalAlignment="Center" Margin="45,0,45,20" VerticalAlignment="Bottom" Width="30" Height="30" RenderTransformOrigin="-0.667,1.25" Click="rLoop16_Click" ClickMode="Press"/>
+                                <Button x:Name="rLoop4" Content="4" VerticalAlignment="Bottom" Height="30" RenderTransformOrigin="-0.667,1.25" Margin="80,0,10,52" Click="rLoop4_Click" ClickMode="Press"/>
+                                <TextBlock Margin="0" TextWrapping="Wrap" Text="Loop" VerticalAlignment="Top" Height="16" TextAlignment="Center" Foreground="White"/>
+                                <Button Content="Loop Off" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Bottom" Width="100" Click="Button_Click_6"/>
+                                <Button x:Name="rLoop8" Content="8" HorizontalAlignment="Left" Margin="10,0,0,20" VerticalAlignment="Bottom" Width="30" Height="30" RenderTransformOrigin="-0.667,1.25" Click="rLoop8_Click" ClickMode="Press" MouseEnter="cue1_MouseEnter" MouseLeave="cue1_MouseLeave" MouseMove="cue1_MouseMove"/>
+                                <Button x:Name="rLoop32" Content="32" VerticalAlignment="Bottom" Height="30" RenderTransformOrigin="-0.667,1.25" Margin="80,0,10,20" Click="rLoop32_Click" ClickMode="Press"/>
+                                <Button x:Name="rLoop2" Content="2" HorizontalAlignment="Center" Margin="45,0,45,52" VerticalAlignment="Bottom" Width="30" Height="30" RenderTransformOrigin="-0.667,1.25" Click="rLoop2_Click" ClickMode="Press"/>
+                            </Grid>
+                            <MediaElement x:Name="scratchDisc1" HorizontalAlignment="Left" Height="58" Margin="252,15,0,0" Grid.Row="1" VerticalAlignment="Top" Width="38" Volume="1" LoadedBehavior="Manual"/>
+                            <ComboBox x:Name="effectCombo" HorizontalAlignment="Left" Margin="135,78,0,0" Grid.Row="1" VerticalAlignment="Top" Width="110" Height="25" Text="No Effect" SelectionChanged="effectCombo_SelectionChanged" SelectedIndex="0">
+                                <ComboBoxItem Name="cbi1">No Effect</ComboBoxItem>
+                                <ComboBoxItem Name="cbi2">BQF</ComboBoxItem>
+                                <ComboBoxItem Name="cbi3">Chorus</ComboBoxItem>
+                                <ComboBoxItem Name="cbi4">Compressor</ComboBoxItem>
+                                <ComboBoxItem Name="cbi5">Distortion</ComboBoxItem>
+                                <ComboBoxItem Name="cbi6">Echo</ComboBoxItem>
+                                <ComboBoxItem Name="cbi7">Flanger</ComboBoxItem>
+                                <ComboBoxItem Name="cbi8">Gargle</ComboBoxItem>
+                                <ComboBoxItem Name="cbi9">Mix</ComboBoxItem>
+                                <ComboBoxItem Name="cbi10">Parameq</ComboBoxItem>
+                                <ComboBoxItem Name="cbi11">Reverb</ComboBoxItem>
+                            </ComboBox>
+                        </Grid>
+                    </Grid>
+                </Border>
+            </Grid>
+            <Grid Grid.Column="1" Margin="0">
+                <Border BorderBrush="White" BorderThickness="3" Margin="0">
+                    <Grid>
+                        <Slider x:Name="crossFeeder" HorizontalAlignment="Center" Margin="50,0,49,6" VerticalAlignment="Bottom" Width="176" Height="43" RenderTransformOrigin="-0.735,1.071" LargeChange="0.1" Maximum="1" SmallChange="0.01" TickFrequency="0.1" Value="0.5" ValueChanged="crossFeeder_ValueChanged"/>
+                        <Label Content="Cross Feeder" HorizontalAlignment="Center" Margin="94,0,95,6" VerticalAlignment="Bottom" Height="22" Width="86" FontSize="13" FontFamily="Trebuchet MS"/>
+                        <svl:Equalizer x:Name="equalizer"
+            						Margin="25,25,25,196" MouseMove="equalizer_MouseMove" MouseLeave="equalizer_MouseLeave" NumberOfBands="7" />
+                        <Slider x:Name="volumeSlider1" HorizontalAlignment="Left" Margin="70,0,0,80" VerticalAlignment="Bottom" Width="26" Height="87" RenderTransformOrigin="-0.735,1.071" LargeChange="0.1" Maximum="1" SmallChange="0.01" TickFrequency="0.1" Orientation="Vertical" ValueChanged="crossFeeder_ValueChanged" Value="1"/>
+                        <Slider x:Name="volumeSlider2" HorizontalAlignment="Right" Margin="0,0,70,80" VerticalAlignment="Bottom" Width="21" Height="87" RenderTransformOrigin="-0.735,1.071" LargeChange="0.1" Maximum="1" SmallChange="0.01" TickFrequency="0.1" Orientation="Vertical" ValueChanged="crossFeeder_ValueChanged" Value="1"/>
+                        <Label Content="Volume" HorizontalAlignment="Left" Margin="50,345,0,0" VerticalAlignment="Top" Height="26" Width="52" FontSize="13" FontFamily="Trebuchet MS"/>
+                        <Label Content="Volume" HorizontalAlignment="Right" Margin="0,345,50,0" VerticalAlignment="Top" Height="26" Width="52" FontSize="13" FontFamily="Trebuchet MS"/>
+                        <Image x:Name="recordButton" HorizontalAlignment="Center" Height="40" Margin="118,0,117,88" VerticalAlignment="Bottom" Width="40" Source="Images/record.png" RenderTransformOrigin="1.625,0.438" MouseLeftButtonUp="recordButton_MouseLeftButtonUp" MouseLeave="recordButton_MouseLeave" MouseEnter="recordButton_MouseEnter" MouseLeftButtonDown="recordButton_MouseLeftButtonDown"/>
+                        <Label x:Name="Record" Content="Record" HorizontalAlignment="Center" Margin="116,345,102,0" VerticalAlignment="Top" Height="26" Width="57" FontSize="13" FontFamily="Trebuchet MS"/>
+                    </Grid>
+                </Border>
+            </Grid>
+            <Border BorderBrush="White" BorderThickness="3" Grid.Column="2" Margin="0" AllowDrop="True" Drop="Border_Drop_2" DragEnter="Border_DragEnter_1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="135*"/>
+                        <RowDefinition Height="287*"/>
+                    </Grid.RowDefinitions>
+                    <Grid Margin="0">
+                        <Border BorderBrush="White" BorderThickness="1" Margin="0">
+                            <Grid>
+                                <svl:WaveformTimeline x:Name="waveformTimeline1"
+            						Margin="0,83,0,0"
+            						BorderThickness="1" />
+                                <svl:SpectrumAnalyzer x:Name="spectrumAnalyzer1"
+            						Margin="0,0,0,30" BarCount="16" />
+                            </Grid>
+                        </Border>
+                    </Grid>
+                    <Grid Margin="0" Grid.Row="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="55*"/>
+                            <RowDefinition Height="232*"/>
+                        </Grid.RowDefinitions>
+                        <Grid Margin="0">
+                            <Border BorderBrush="White" BorderThickness="1" Margin="0">
+                                <Image x:Name="browseButton2" HorizontalAlignment="Left" Height="40" Margin="7,0,0,5" VerticalAlignment="Bottom" Width="40" Source="Images/browse white.png" RenderTransformOrigin="1.625,0.438" MouseLeftButtonUp="browseButton2_MouseLeftButtonUp" MouseLeftButtonDown="browseButton2_MouseLeftButtonDown" MouseLeave="browseButton2_MouseLeave" MouseEnter="browseButton2_MouseEnter" />
+                            </Border>
+                            <TextBlock x:Name="songName2" Margin="125,5,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Foreground="Blue" FontSize="16" FontWeight="Bold" TextAlignment="Right"/>
+                            <TextBlock x:Name="albumName2" Margin="125,0,10,3" TextWrapping="Wrap" VerticalAlignment="Bottom" Height="25" Foreground="White" FontSize="16" TextAlignment="Right"/>
+                            <TextBlock HorizontalAlignment="Right" Margin="0,16,384,14" TextWrapping="Wrap" Text="BPM" VerticalAlignment="Center" Height="25" Width="38" Foreground="Blue" FontSize="16" FontWeight="Bold" RenderTransformOrigin="2,0.94"/>
+                            <TextBlock x:Name="bpmText2" HorizontalAlignment="Left" Margin="46,14,0,12" TextWrapping="Wrap" VerticalAlignment="Center" Height="29" Width="63" Foreground="White" FontSize="20" FontWeight="Bold" RenderTransformOrigin="2,0.94"/>
+                        </Grid>
+
+                        <Image x:Name="playButton2" HorizontalAlignment="Left" Height="40" Margin="110,0,0,10" Grid.Row="1" VerticalAlignment="Bottom" Width="40" Source="Images/play white.png" RenderTransformOrigin="1.625,0.438" MouseLeftButtonUp="playButton2_MouseLeftButtonUp" MouseLeave="playButton2_MouseLeave" MouseEnter="playButton2_MouseEnter" MouseLeftButtonDown="playButton2_MouseLeftButtonDown"/>
+                        <Image x:Name="stopButton2" HorizontalAlignment="Left" Height="40" Margin="60,0,0,10" Grid.Row="1" VerticalAlignment="Bottom" Width="40" Source="Images/stop white.png" RenderTransformOrigin="1.625,0.438" MouseLeftButtonUp="stopButton2_MouseLeftButtonUp" MouseLeave="stopButton2_MouseLeave" MouseEnter="stopButton2_MouseEnter" MouseLeftButtonDown="stopButton2_MouseLeftButtonDown"/>
+                        <Image x:Name="pauseButton2" HorizontalAlignment="Left" Height="40" Margin="160,0,0,10" Grid.Row="1" VerticalAlignment="Bottom" Width="40" Source="Images/pause white.png" RenderTransformOrigin="1.625,0.438" MouseLeftButtonUp="pauseButton2_MouseLeftButtonUp" MouseEnter="pauseButton2_MouseEnter" MouseLeave="pauseButton2_MouseLeave" MouseLeftButtonDown="pauseButton2_MouseLeftButtonDown"/>
+                        <Slider x:Name="pitchSlider2" HorizontalAlignment="Left" Margin="10,0,0,72" VerticalAlignment="Bottom" Width="22" Height="125" RenderTransformOrigin="-0.735,1.071" LargeChange="0.1" Maximum="1" SmallChange="0.01" TickFrequency="0.1"  Grid.Row="1" Orientation="Vertical" Minimum="-1"/>
+                        <Label Content="Pitch" HorizontalAlignment="Left" Margin="5,12,0,0" Grid.Row="1" VerticalAlignment="Top" Height="23" Width="40" FontSize="13" FontFamily="Trebuchet MS"/>
+                        <Image x:Name="cueButton2" HorizontalAlignment="Left" Height="40" Margin="210,0,0,10" Grid.Row="1" VerticalAlignment="Bottom" Width="40" Source="Images/cue white.png" RenderTransformOrigin="1.625,0.438" MouseLeave="cueButton2_MouseLeave" MouseLeftButtonUp="cueButton2_MouseLeftButtonUp" MouseLeftButtonDown="cueButton2_MouseLeftButtonDown" MouseEnter="cueButton2_MouseEnter" />
+                        <Image x:Name="syncButton2" HorizontalAlignment="Left" Height="40" Margin="10,0,0,10" Grid.Row="1" VerticalAlignment="Bottom" Width="40" Source="Images/sync white.png" RenderTransformOrigin="1.625,0.438" MouseEnter="syncButton2_MouseEnter" MouseLeave="syncButton2_MouseLeave" MouseLeftButtonUp="syncButton2_MouseLeftButtonUp" MouseLeftButtonDown="syncButton2_MouseLeftButtonDown"/>
+                        <Grid HorizontalAlignment="Right" Height="63" Margin="0,10,10,0" Grid.Row="1" VerticalAlignment="Top" Width="197">
+                            <svl:DigitalClock Grid.Row="1"
+            					Grid.ColumnSpan="2"
+            					x:Name="clockDisplay1"
+            					HorizontalAlignment="Right"
+            					Margin="5" ShowSubSeconds="True" ShowHours="False" />
+                        </Grid>
+                        <Grid x:Name="blueDiscGrid" Grid.Row="1" Margin="52,12,0,0" HorizontalAlignment="Left" Width="160" Height="160" VerticalAlignment="Top">
+                            <Image x:Name="blueDisc" Source="Images/disc blue.png" RenderTransformOrigin="0.5,0.5"   VerticalAlignment="Top" Grid.Row="1" Cursor="Hand" MouseLeftButtonDown="blueDisc_MouseLeftButtonDown" MouseLeftButtonUp="blueDisc_MouseLeftButtonUp" MouseMove="blueDisc_MouseMove"/>
+                        </Grid>
+                        <StackPanel Orientation="Vertical"
+                        	VerticalAlignment="Bottom"
+            							Margin="424,0,10,90" Grid.Row="1" Height="67" Visibility="Visible">
+                            <svl:TimeEditor Margin="5"
+                        		x:Name="repeatStartTimeEdit1"
+            								IsReadOnly="True" />
+                            <svl:TimeEditor Margin="5"
+                        		x:Name="repeatStopTimeEdit1"
+            								IsReadOnly="True" />
+                        </StackPanel>
+                        <Menu
+            					Margin="-23,-174,433,201" Visibility="Hidden">
+                            <MenuItem Header="File">
+                                <MenuItem Header="Open File"
+                        			x:Name="OpenFileMenuItem"
+                        			Click="OpenFileMenuItem_Click" />
+                                <Separator />
+                                <MenuItem Header="Close"
+                        			x:Name="CloseMenuItem"
+                        			Click="CloseMenuItem_Click" />
+                            </MenuItem>
+                            <MenuItem Header="Theme">
+                                <MenuItem x:Name="DefaultThemeMenuItem"
+                        			Header="Default (No Theme)"
+                        			IsCheckable="True"
+                        			Checked="DefaultThemeMenuItem_Checked" />
+                                <MenuItem x:Name="ExpressionDarkMenuItem"
+                        			Header="Expression Dark"
+                        			IsCheckable="True"
+                        			Checked="ExpressionDarkMenuItem_Checked" />
+                                <MenuItem x:Name="ExpressionLightMenuItem"
+                        			Header="Expression Light"
+                        			IsCheckable="True"
+                        			Checked="ExpressionLightMenuItem_Checked" />
+                            </MenuItem>
+                        </Menu>
+                        <Grid HorizontalAlignment="Right" Height="72" Margin="0,0,10,10" Grid.Row="1" VerticalAlignment="Bottom" Width="120">
+                            <Button x:Name="cue4" Content="1" HorizontalAlignment="Left" Margin="10,0,0,20" VerticalAlignment="Bottom" Width="30" Height="30" RenderTransformOrigin="-0.667,1.25" ClickMode="Press" MouseEnter="cue1_MouseEnter" MouseLeave="cue1_MouseLeave" MouseMove="cue1_MouseMove" Click="cue4_Click"/>
+                            <Button x:Name="cue5" Content="2" HorizontalAlignment="Center" Margin="45,0,45,20" VerticalAlignment="Bottom" Width="30" Height="30" RenderTransformOrigin="-0.667,1.25" ClickMode="Press" Click="cue5_Click"/>
+                            <Button x:Name="cue6" Content="3" VerticalAlignment="Bottom" Height="30" RenderTransformOrigin="-0.667,1.25" Margin="80,0,10,20" Click="cue6_Click" ClickMode="Press"/>
+                            <TextBlock Margin="0" TextWrapping="Wrap" Text="Hot Cues" VerticalAlignment="Top" Height="16" TextAlignment="Center" Foreground="White"/>
+                            <Button Content="Reset" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Bottom" Width="100" Click="Button_Click_5"/>
+                        </Grid>
+                        <Grid HorizontalAlignment="Right" Height="107" Margin="0,0,135,10" Grid.Row="1" VerticalAlignment="Bottom" Width="120">
+                            <Button x:Name="bLoop1" Content="1" HorizontalAlignment="Left" Margin="10,0,0,52" VerticalAlignment="Bottom" Width="30" Height="30" RenderTransformOrigin="-0.667,1.25" Click="bLoop1_Click" ClickMode="Press" MouseEnter="cue1_MouseEnter" MouseLeave="cue1_MouseLeave" MouseMove="cue1_MouseMove"/>
+                            <Button x:Name="bLoop16" Content="16" HorizontalAlignment="Center" Margin="45,0,45,20" VerticalAlignment="Bottom" Width="30" Height="30" RenderTransformOrigin="-0.667,1.25" Click="bLoop16_Click" ClickMode="Press"/>
+                            <Button x:Name="bLoop4" Content="4" VerticalAlignment="Bottom" Height="30" RenderTransformOrigin="-0.667,1.25" Margin="80,0,10,52" Click="bLoop4_Click" ClickMode="Press"/>
+                            <TextBlock Margin="0" TextWrapping="Wrap" Text="Loop" VerticalAlignment="Top" Height="16" TextAlignment="Center" Foreground="White"/>
+                            <Button Content="Loop Off" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Bottom" Width="100" Click="Button_Click_7"/>
+                            <Button x:Name="bLoop8" Content="8" HorizontalAlignment="Left" Margin="10,0,0,20" VerticalAlignment="Bottom" Width="30" Height="30" RenderTransformOrigin="-0.667,1.25" Click="bLoop8_Click" ClickMode="Press" MouseEnter="cue1_MouseEnter" MouseLeave="cue1_MouseLeave" MouseMove="cue1_MouseMove"/>
+                            <Button x:Name="bLoop32" Content="32" VerticalAlignment="Bottom" Height="30" RenderTransformOrigin="-0.667,1.25" Margin="80,0,10,20" Click="bLoop32_Click" ClickMode="Press"/>
+                            <Button x:Name="bLoop2" Content="2" HorizontalAlignment="Center" Margin="45,0,45,52" VerticalAlignment="Bottom" Width="30" Height="30" RenderTransformOrigin="-0.667,1.25" Click="bLoop2_Click" ClickMode="Press"/>
+                        </Grid>
+                        <MediaElement x:Name="scratchDisc2" HorizontalAlignment="Left" Height="58" Margin="241,15,0,0" Grid.Row="1" VerticalAlignment="Top" Width="38" Volume="1" LoadedBehavior="Manual"/>
+                        <ComboBox x:Name="effectCombo1" HorizontalAlignment="Left" Margin="284,75,0,0" Grid.Row="1" VerticalAlignment="Top" Width="110" Height="25" Text="No Effect" SelectionChanged="effectCombo1_SelectionChanged" SelectedIndex="0">
+                            <ComboBoxItem x:Name="cbi12" Content="No Effect"/>
+                            <ComboBoxItem x:Name="cbi13" Content="BQF"/>
+                            <ComboBoxItem x:Name="cbi14" Content="Chorus"/>
+                            <ComboBoxItem x:Name="cbi15" Content="Compressor"/>
+                            <ComboBoxItem x:Name="cbi16" Content="Distortion"/>
+                            <ComboBoxItem x:Name="cbi17" Content="Echo"/>
+                            <ComboBoxItem x:Name="cbi18" Content="Flanger"/>
+                            <ComboBoxItem x:Name="cbi19" Content="Gargle"/>
+                            <ComboBoxItem x:Name="cbi20" Content="Mix"/>
+                            <ComboBoxItem x:Name="cbi21" Content="Parameq"/>
+                            <ComboBoxItem x:Name="cbi22" Content="Reverb"/>
+                        </ComboBox>
+                    </Grid>
+                </Grid>
+            </Border>
+        </Grid>
+        <Border BorderBrush="White" BorderThickness="3" Margin="0,0,0,3" Grid.Row="1">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="400"/>
+                    <ColumnDefinition Width="Auto" MinWidth="5" />
+                    <ColumnDefinition Width="675*"/>
+                </Grid.ColumnDefinitions>
+                <GridSplitter Grid.Column="1"
+              HorizontalAlignment="Center"
+              VerticalAlignment="Stretch"
+              Background="White" 
+              ShowsPreview="True"
+              Width="5"
+              />
+                <TreeView x:Name="foldersItem" Width="Auto" Background="#00000000" BorderBrush="#FFFFFFFF" Foreground="#FFFFFFFF" SelectedItemChanged="foldersItem_SelectedItemChanged" Loaded="foldersItem_Loaded" FontSize="16" FontFamily="Kartika">
+                    <TreeView.Resources>
+                        <Style TargetType="{x:Type TreeViewItem}">
+                            <Setter Property="HeaderTemplate">
+                                <Setter.Value>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Image Name="img"  Width="20" Height="20" Stretch="Fill" 
+                                       Source="{Binding RelativeSource={RelativeSource 
+                                       Mode=FindAncestor, 
+                                       AncestorType={x:Type TreeViewItem}}, 
+                                       Path=Header, 
+                                       Converter={x:Static local:HeaderToImageConverter.Instance}}"       
+                                       />
+                                            <TextBlock Text="{Binding}" Margin="5,0" />
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </TreeView.Resources>
+                </TreeView>
+                
+                    <ListBox x:Name="fileList" ScrollViewer.VerticalScrollBarVisibility="Auto" Grid.Column="2" Background="Transparent" PreviewMouseLeftButtonDown="fileList_PreviewMouseLeftButtonDown" PreviewMouseMove="fileList_PreviewMouseMove" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                    <ListBox.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel IsItemsHost="True" Orientation="Vertical"/>
+                        </ItemsPanelTemplate>
+                    </ListBox.ItemsPanel>
+                    
+
+
+                </ListBox>
+                <Grid x:Name="uploadGrid" Height="45" Width="939" Visibility="Hidden" Grid.Column="2" VerticalAlignment="Top" Margin="5,0">
+                    <Button x:Name="uploadButton" Content="Upload" HorizontalAlignment="Left" Margin="855,0,0,16" VerticalAlignment="Bottom" Width="74" Click="uploadButton_Click"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Songs List" VerticalAlignment="Top" Height="25" Width="117" FontSize="18" FontWeight="Bold" Foreground="White"/>
+                    <Button x:Name="Refresh" Content="Refresh" HorizontalAlignment="Left" Margin="761,0,0,16" VerticalAlignment="Bottom" Width="74" Click="Refresh_Click"/>
+                    <Button x:Name="Refresh_Copy" Content="Delete" HorizontalAlignment="Left" Margin="665,0,0,16" VerticalAlignment="Bottom" Width="74" Click="Refresh_Copy_Click"/>
+                </Grid>
+                <ListBox x:Name="cloudList" Grid.Column="2" PreviewMouseLeftButtonDown="fileList_PreviewMouseLeftButtonDown" PreviewMouseMove="cloudList_PreviewMouseMove" Margin="0,50,0,0" Visibility="Hidden" />
+                <Grid x:Name="cloudGrid" Grid.Column="3" Visibility="Hidden">
+                    <TextBox x:Name="tb3" HorizontalAlignment="Left" Height="23" Margin="380,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="233"/>
+                    <PasswordBox x:Name="pb1" HorizontalAlignment="Left" Margin="380,101,0,0" VerticalAlignment="Top" Height="21" Width="233"/>
+                    <Label x:Name="username" Content="Username" HorizontalAlignment="Left" Margin="287,62,0,0" VerticalAlignment="Top" Width="84" Height="23" FontSize="13"/>
+                    <Label x:Name="password" Content="Password" HorizontalAlignment="Left" Margin="287,101,0,0" VerticalAlignment="Top" Width="84" Height="21" FontSize="13"/>
+                    <Button x:Name="login" Content="Login" HorizontalAlignment="Left" Margin="380,148,0,0" VerticalAlignment="Top" Width="75" Click="login_Click" />
+                    <Button x:Name="cancel" Content="Cancel" HorizontalAlignment="Left" Margin="538,147,0,0" VerticalAlignment="Top" Width="75" Click="cancel_Click" />
+                    <Label x:Name="signup" HorizontalAlignment="Left" Margin="494,183,0,0" VerticalAlignment="Top" Width="119" Height="29" RenderTransformOrigin="2.416,0.448">
+                        <Hyperlink >Click Here to Sign Up</Hyperlink>
+                    </Label>
+                    <Label x:Name="mesg" Content="Email and Password supplied don't match." HorizontalAlignment="Left" Margin="81,158,0,0" VerticalAlignment="Top" Width="388" RenderTransformOrigin="0.027,5.404" ScrollViewer.VerticalScrollBarVisibility="Hidden" Visibility="Hidden"/>
+                    <Label x:Name="notreg" Content="Email is not registered. Please click below to sign up." HorizontalAlignment="Left" Margin="81,214,0,0" VerticalAlignment="Top" Width="388" ScrollViewer.VerticalScrollBarVisibility="Disabled" Visibility="Hidden"/>
+                    <TextBlock x:Name="messageLabel" TextWrapping="Wrap" Text="Incorrect Username or Password" Margin="380,227,336,33" Foreground="Red" FontSize="14" FontWeight="Bold" Height="31" TextAlignment="Center" Visibility="Hidden"/>
+                </Grid>
+            </Grid>
+        </Border>
+        <Grid HorizontalAlignment="Left" Height="30" Margin="1090,-35,0,0" VerticalAlignment="Top" Width="177">
+            <Rectangle Fill="Blue" HorizontalAlignment="Left" Height="20" Margin="130,0,0,5" Stroke="Black" VerticalAlignment="Bottom" Width="20" MouseLeftButtonUp="Rectangle_MouseLeftButtonUp_3"/>
+            <Rectangle Fill="Red" HorizontalAlignment="Left" Height="20" Margin="98,0,0,5" Stroke="Black" VerticalAlignment="Bottom" Width="20" MouseLeftButtonUp="Rectangle_MouseLeftButtonUp_2"/>
+            <Rectangle Fill="#FF424247" HorizontalAlignment="Left" Height="20" Margin="64,0,0,5" Stroke="Black" VerticalAlignment="Bottom" Width="20" MouseLeftButtonUp="Rectangle_MouseLeftButtonUp_1"/>
+        </Grid>
+
+    </Grid>
+
+</Window>
